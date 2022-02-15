@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+module/.DS_Store
+module/src/.DS_Store
+tests/noodl_modules/.DS_Store
+tests/noodl_modules/noodl-masonry/index.js
+tests/noodl_modules/noodl-masonry/index.js.map
+tests/noodl_modules/noodl-masonry/manifest.json
