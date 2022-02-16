@@ -7,14 +7,16 @@ function MasonryWrapper(props) {
 
 
 	return (
+		<div className="masonry" style={{ width: props.width }}>
 		<Masonry
 			{...props}
-			breakpointCols={2}	
 			display = {'flex'}
-			width = {'100%'}
+			columnCount={props.columns}
 		>
 	
 		</Masonry>
+	</div>
+		
 	);
 	
 		
@@ -30,7 +32,8 @@ export const MasonryNode = {
 	inputProps: {
 		//enabled: {type: 'boolean', default: false},
 		//height: {type: 'number'}
-		columnCount: {type: 'number'}
+		width: {type: 'string', default: '100%'},
+		columns: {type: 'number', default: 2}
 	},
 	outputProps: {
 		onClick: {type: 'signal'},
