@@ -3,23 +3,19 @@ import Masonry from 'react-masonry-component';
 
 function MasonryWrapper(props) {
 
-	console.log("props:", props)
-
-
 	return (
-		<div className="masonry" style={{ width: props.width }}>
+		<div className="masonry" style={{ width: props.width} }>
 		<Masonry
-			{...props}
 			display = {'flex'}
 			columnCount={props.columns}
+			columnClassName={props.elementClassName}
+			enableResizableChildren={true}	
+			{...props}
 		>
-	
-		</Masonry>
-	</div>
-		
-	);
-	
-		
+			{props.children}
+			</Masonry>
+		</div>	
+	);	
 }
 
 export const MasonryNode = {
@@ -30,10 +26,9 @@ export const MasonryNode = {
 	  )
 	},
 	inputProps: {
-		//enabled: {type: 'boolean', default: false},
-		//height: {type: 'number'}
 		width: {type: 'string', default: '100%'},
-		columns: {type: 'number', default: 2}
+		columns: {type: 'number', default: 2},
+		elementClassName:{type: 'string', default:'grid_column_class'},
 	},
 	outputProps: {
 		onClick: {type: 'signal'},
