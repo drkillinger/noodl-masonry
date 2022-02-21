@@ -19,8 +19,8 @@ function MasonryWrapper(props) {
 }
 
 export const MasonryNode = {
-	name: 'Masonry',
-	category: 'LOL',
+	name: 'Masonry Grid',
+	category: 'Masonry',
 	getReactComponent() {
 		return (MasonryWrapper
 	  )

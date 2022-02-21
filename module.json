@@ -1,7 +1,7 @@
 {
-  "name": "noodl-mapbox",
-  "label": "Mapbox 2",
-  "desc": "A better mapbox",
-  "docs": "https://github.com/noodlapp/noodl-mapbox-module",
-  "_id": "f1f56ef6-7e0e-77e5-417f-6b9e06ba6104-noodl-mapbox"
+  "name": "noodl-masonry",
+  "label": "Masonry Grid",
+  "desc": "A simple React Masonry grid view",
+  "docs": "https://github.com/drkillinger/noodl-masonry",
+  "_id": "705edf0c-7f28-417d-b1c3-2aa720bb591b-noodl-masonry"
 }
