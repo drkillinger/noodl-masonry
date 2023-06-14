@@ -7,7 +7,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 const pjson = require('./package.json');
 //var outputPath = path.resolve(__dirname, '../project/noodl_modules/' + pjson.name);
 console.log("NB output is outside of this project, /Users/mathiaslevin/Documents/Noodl/griddomax/noodl_modules/noodl-masonry/");
-var outputPath = path.resolve(__dirname, '/Users/mathiaslevin/Documents/Noodl/griddomax/noodl_modules/noodl-masonry');
+//ar outputPath = path.resolve(__dirname, '/Users/mathiaslevin/Documents/Noodl/griddomax/noodl_modules/noodl-masonry');
+var outputPath = path.resolve(__dirname, '/Users/mathiaslevin/Library/Application\ Support/Noodl/projects/c47d5c1c-533d-43b0-9e53-d9a4de2237f8/noodl_modules/noodl-masonry');
 // as an alternative you can direct the output to a specific project
 // it works the same way on Windows, but the path is slightly different
 // var outputPath = '/Users/some-user/Library/Application\ Support/Noodl/projects/some-long-guid/noodl_modules/' + pjson.name;

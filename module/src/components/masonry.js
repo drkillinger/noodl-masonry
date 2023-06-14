@@ -9,7 +9,7 @@ function MasonryWrapper(props) {
 			display = {'flex'}
 			columnCount={props.columns}
 			columnClassName={props.elementClassName}
-			enableResizableChildren={true}	
+			enableResizableChildren={props.enableResizableChildren}	
 			{...props}
 		>
 			{props.children}
@@ -27,8 +27,9 @@ export const MasonryNode = {
 	},
 	inputProps: {
 		width: {type: 'string', default: '100%'},
-		columns: {type: 'number', default: 2},
+		columns: {type: 'number', default: 3},
 		elementClassName:{type: 'string', default:'grid_column_class'},
+		enableResizableChildren:{type: 'boolean', default: 'true'}
 	},
 	outputProps: {
 		onClick: {type: 'signal'},
